@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mani_kultura/screens/dashboard_screen.dart';
 import 'package:mani_kultura/screens/signup_screen.dart';
 
 void main() {
@@ -115,7 +116,18 @@ class _LoginState extends State<Login> {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: Colors.grey[300]!),
         ),
+        filled: true,
+        fillColor: Colors.grey[50],
       ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'Please enter your email';
+        }
+        if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+          return 'Please enter a valid email';
+        }
+        return null;
+      },
     );
   }
 
@@ -129,6 +141,8 @@ class _LoginState extends State<Login> {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: Colors.grey[300]!),
         ),
+        filled: true,
+        fillColor: Colors.grey[50],
       ),
     );
   }
@@ -147,7 +161,12 @@ class _LoginState extends State<Login> {
         borderRadius: BorderRadius.circular(12),
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => DashboardScreen()),
+          );
+        },
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(vertical: 16),
           backgroundColor: Colors.transparent,
