@@ -55,6 +55,11 @@ flutter:
   - assets/nail1.avif
   - assets/nail2.webp
   - assets/map.png
+  - assets/ic_back_arrow.png
+  - assets/img_portfolio_001.png
+  - assets/img_portfolio_002.png
+  - assets/img_portfolio_003.png
+  - assets/img_profile_photo_placeholder.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

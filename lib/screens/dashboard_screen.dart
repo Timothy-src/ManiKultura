@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mani_kultura/screens/home_screen.dart';
+import 'package:mani_kultura/screens/profile_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -15,7 +16,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     HomeScreen(),
     Center(child: Text("Search page coming soon")),
     Center(child: Text("Booking page coming soon")),
-    Center(child: Text("Profile page coming soon")),
+    ProfileScreen(),
   ];
 
   void onItemTapped(int index) {
