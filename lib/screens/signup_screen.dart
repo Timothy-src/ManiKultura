@@ -113,13 +113,15 @@ class _SignupScreenState extends State<SignupScreen> {
           value: _selectedRole,
           decoration: InputDecoration(
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(color: Colors.grey[600]!),
             ),
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(color: Colors.grey[600]!),
             ),
+            filled: true,
+            fillColor: Colors.grey[50],
           ),
           items: ["Here as a Client", "Here as a Worker"].map((role) {
             return DropdownMenuItem<String>(
@@ -145,13 +147,15 @@ class _SignupScreenState extends State<SignupScreen> {
           value: _selectedGender,
           decoration: InputDecoration(
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(color: Colors.grey[600]!),
             ),
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(6),
+              borderRadius: BorderRadius.circular(12),
               borderSide: BorderSide(color: Colors.grey[600]!),
             ),
+            filled: true,
+            fillColor: Colors.grey[50],
           ),
           items: ["Female", "Male"].map((role) {
             return DropdownMenuItem<String>(
