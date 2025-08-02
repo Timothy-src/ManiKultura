@@ -181,7 +181,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               backgroundColor: Color(0xFF6C63FF),
               padding: EdgeInsets.symmetric(horizontal: 32, vertical: 10),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadiusGeometry.circular(8),
+                borderRadius: BorderRadiusGeometry.circular(18),
               ),
             ),
             child: Text(
